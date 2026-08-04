@@ -3915,7 +3915,7 @@ section.lead footer { color: #c1dbef; }
 </code></pre>
 <ul>
 <li><code>text</code>があればコメントを表示</li>
-<li><code>iconUrl</code>があればアイテムを表示</li>
+<li><code>item</code>があれば<code>item.iconUrl</code>と<code>item.name</code>でアイテムを表示</li>
 <li>コメントだけ・アイテムだけ・両方の投稿に対応</li>
 </ul>
 <footer>jig.jp インターン資料 / Claude Code で学ぶ実践開発</footer>
@@ -5106,7 +5106,7 @@ section.lead footer { color: #c1dbef; }
 <p><strong>取得先とデータ</strong></p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-text">GET https://intern-comment-server.intern-comment-server.deno.net/items
 </code></pre>
-<p>一覧の各データにある<code>itemId</code>、<code>itemName</code>、<code>iconUrl</code>を使います。</p>
+<p>一覧の各データにある<code>id</code>、<code>name</code>、<code>iconUrl</code>を使います。</p>
 <footer>jig.jp インターン資料 / Claude Code で学ぶ実践開発</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-paginate="true" data-footer="jig.jp インターン資料 / Claude Code で学ぶ実践開発" data-header="Step 5 アイテム一覧" data-theme="default" data-style="section {
@@ -5697,8 +5697,8 @@ section.lead footer { color: #c1dbef; }
 </code></pre>
 <ul>
 <li>コメントだけ: <code>text</code>を送信</li>
-<li>アイテムだけ: アイテム一覧から選択した<code>itemId</code>を送信</li>
-<li>両方: <code>text</code>と選択した<code>itemId</code>を送信</li>
+<li>アイテムだけ: 選択したアイテムの<code>id</code>を<code>itemId</code>として送信</li>
+<li>両方: <code>text</code>と<code>itemId</code>を送信</li>
 </ul>
 <footer>jig.jp インターン資料 / Claude Code で学ぶ実践開発</footer>
 </section>
